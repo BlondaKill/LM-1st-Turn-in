@@ -36,3 +36,38 @@ switch(sneakers){
 }
 sneakers = prompt('Ingrese modelo y le dire el precio: \ng - graffitti\nf - flor\nl - lips\no - osiris\n\nb / para volver al menu');
 }
+
+let graffitti = 160;
+let flor = 160;
+let lips = 140;
+let osiris = 190;
+
+let compra = graffitti+flor+lips+osiris;
+
+
+function sumatoriaCompra(totalSneakers) {
+    let total = totalSneakers;
+    alert('El total de su compra es $'+total);
+} 
+
+sumatoriaCompra(compra);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
