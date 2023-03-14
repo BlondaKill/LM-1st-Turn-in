@@ -40,10 +40,11 @@ switch(sneakers){
         break;
 
     default:
-        alert('Modelo Inexistente')
+        alert('Modelo Inexistente');
+        break;
 
 }
-sneakers = prompt('Ingresa el modelo y sabras el precio: \n1 - Graffitti\n2 - Flor\n3 - Lips\n4 - Osiris\n\nB / para volver al menu');
+sneakers = prompt('Ingresa el modelo y sabras el precio:\n \n1 - Graffitti\n2 - Flor\n3 - Lips\n4 - Osiris\n\nB / para volver al menu');
 }
 
 
