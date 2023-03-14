@@ -1,4 +1,4 @@
-//Pagina de Zapatillas x Genero ()
+//Pagina de Zapatillas x Genero 
 
 function welcome() {
     let saludar = 'Welcome to your original SNKRS';
@@ -31,8 +31,8 @@ let sneakers = prompt('Elegi el modelo y sabras el precio:\n \n1 - Graffitti\n2 
 while (sneakers != 'B') {
     switch (sneakers) {
         case '1':
-            alert('Tu modelo elegido cuesta $160'); 
-            sumatoriaCompra(160);          
+            alert('Tu modelo elegido cuesta $160');
+            sumatoriaCompra(160);
             break;
         case '2':
             alert('Tu modelo elegido cuesta $140');
@@ -55,16 +55,12 @@ while (sneakers != 'B') {
     sneakers = prompt('Ingresa el modelo y sabras el precio:\n \n1 - Graffitti\n2 - Flor\n3 - Lips\n4 - Osiris\n\nB / para volver al menu');
 }
 
-alert('Total de su compra $'+total);
+alert('Total de su compra $' + total);
 
-
+//================================ Total Compra ==========================================
 
 
 function sumatoriaCompra(precio) {
-    total = total+precio;
-    alert('Llevas gastado $'+total);
+    total = total + precio;
+    alert('Llevas gastado $' + total);
 }
-
-
-
-
