@@ -1,42 +1,52 @@
 
-let question = prompt('Desea seleccionar genero del producto? (y-yes / n-no)');
+function welcome(){
+    let saludar = 'Welcome to your original SNKRS';
+    alert('Welcome to your original SNKRS');
+}
+welcome();
+
+
+let question = prompt('Deseas seleccionar genero del producto? (y-yes / n-no)');
 while (question == 'y'){
     let answer = prompt('1-Women\n2-Men\n3-Kids');
     if (answer == '1'){
-        alert('Women');
+        alert('Elegiste genero Women');
     }else if(answer == '2'){
-        alert(Men);
+        alert('Elegiste genero Men');
     }else if(answer == '3'){
+        alert('Elegiste genero Kids')
     }else {
         alert('Genero inexistente');
     }
-    question = prompt('Desea cambiar el genero? (y-yes / n-no)');
+    question = prompt('Deseas cambiar el genero? (y-yes / n-no)');
 }
 
-let sneakers = prompt('Ingrese modelo y le dire el precio: \ng - graffitti\nf - flor\nl - lips\no - osiris\n\nb / para volver al menu');
+let sneakers = prompt('Elegi el modelo y sabras el precio: \n1 - Graffitti\n2 - Flor\n3 - Lips\n4 - Osiris\n\nB / para volver al menu');
 
-while(sneakers != 'b'){
+while(sneakers != 'B'){
 switch(sneakers){
-    case 'g':
-        alert('$160');
+    case '1':
+        alert('Tu modelo elegido cuesta $160');
         break;
-    case 'f':
-        alert('$140');
+    case '2':
+        alert('Tu modelo elegido cuesta $140');
         break;
-    case 'l':
-        alert('$110');
+    case '3':
+        alert('Tu modelo elegido cuesta $110');
         break;
-    case 'o':
-        alert('$200');
+    case '4':
+        alert('Tu modelo elegido $200');
         break;
 
     default:
         alert('Modelo Inexistente')
 
 }
-sneakers = prompt('Ingrese modelo y le dire el precio: \ng - graffitti\nf - flor\nl - lips\no - osiris\n\nb / para volver al menu');
+sneakers = prompt('Ingresa el modelo y sabras el precio: \n1 - Graffitti\n2 - Flor\n3 - Lips\n4 - Osiris\n\nB / para volver al menu');
 }
 
+
+//======================= Funciones ============================
 let graffitti = 160;
 let flor = 160;
 let lips = 140;
@@ -51,6 +61,12 @@ function sumatoriaCompra(totalSneakers) {
 } 
 
 sumatoriaCompra(compra);
+
+
+
+
+
+
 
 
 
