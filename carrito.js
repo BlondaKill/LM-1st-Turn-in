@@ -6,7 +6,8 @@ function welcome(){
 welcome();
 
 
-let question = prompt('Deseas seleccionar genero del producto? (y-yes / n-no)');
+let question = prompt('Deseas seleccionar genero del producto? \n(y-yes / n-no)');
+
 while (question == 'y'){
     let answer = prompt('1-Women\n2-Men\n3-Kids');
     if (answer == '1'){
@@ -15,13 +16,13 @@ while (question == 'y'){
         alert('Elegiste genero Men');
     }else if(answer == '3'){
         alert('Elegiste genero Kids')
-    }else {
+    }else{
         alert('Genero inexistente');
     }
     question = prompt('Deseas cambiar el genero? (y-yes / n-no)');
 }
 
-let sneakers = prompt('Elegi el modelo y sabras el precio: \n1 - Graffitti\n2 - Flor\n3 - Lips\n4 - Osiris\n\nB / para volver al menu');
+let sneakers = prompt('Elegi el modelo y sabras el precio:\n \n1 - Graffitti\n2 - Flor\n3 - Lips\n4 - Osiris\n\nB / para volver al menu');
 
 while(sneakers != 'B'){
 switch(sneakers){
@@ -35,7 +36,7 @@ switch(sneakers){
         alert('Tu modelo elegido cuesta $110');
         break;
     case '4':
-        alert('Tu modelo elegido $200');
+        alert('Tu modelo elegido cuesta $200');
         break;
 
     default:
@@ -46,7 +47,7 @@ sneakers = prompt('Ingresa el modelo y sabras el precio: \n1 - Graffitti\n2 - Fl
 }
 
 
-//======================= Funciones ============================
+
 let graffitti = 160;
 let flor = 160;
 let lips = 140;
