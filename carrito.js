@@ -1,3 +1,5 @@
+//Pagina de Zapatillas x Genero ()
+
 function welcome() {
     let saludar = 'Welcome to your original SNKRS';
     alert('Welcome to your original SNKRS');
@@ -20,22 +22,29 @@ while (question == 'y') {
     }
     question = prompt('Deseas cambiar el genero? (y-yes / n-no)');
 }
+//==================================== Precios segun modelo elegido ===================================
+
+let total = 0;
 
 let sneakers = prompt('Elegi el modelo y sabras el precio:\n \n1 - Graffitti\n2 - Flor\n3 - Lips\n4 - Osiris\n\nB / para volver al menu');
 
 while (sneakers != 'B') {
     switch (sneakers) {
         case '1':
-            alert('Tu modelo elegido cuesta $160');
+            alert('Tu modelo elegido cuesta $160'); 
+            sumatoriaCompra(160);          
             break;
         case '2':
             alert('Tu modelo elegido cuesta $140');
+            sumatoriaCompra(140);
             break;
         case '3':
             alert('Tu modelo elegido cuesta $110');
+            sumatoriaCompra(110);
             break;
         case '4':
             alert('Tu modelo elegido cuesta $200');
+            sumatoriaCompra(200);
             break;
 
         default:
@@ -46,19 +55,16 @@ while (sneakers != 'B') {
     sneakers = prompt('Ingresa el modelo y sabras el precio:\n \n1 - Graffitti\n2 - Flor\n3 - Lips\n4 - Osiris\n\nB / para volver al menu');
 }
 
+alert('Total de su compra $'+total);
 
 
-let graffitti = 160;
-let flor = 160;
-let lips = 140;
-let osiris = 190;
-
-let compra = graffitti + flor + lips + osiris;
 
 
-function sumatoriaCompra(totalSneakers) {
-    let total = totalSneakers;
-    alert('El total de su compra es $' + total);
+function sumatoriaCompra(precio) {
+    total = total+precio;
+    alert('Llevas gastado $'+total);
 }
 
-sumatoriaCompra(compra);
+
+
+
