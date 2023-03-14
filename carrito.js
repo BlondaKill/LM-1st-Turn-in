@@ -1,10 +1,10 @@
 //Pagina de Zapatillas x Genero 
 
-function welcome() {
-    let saludar = 'Welcome to your original SNKRS';
+function saludar() {
+    let saludo = 'Welcome to your original SNKRS';
     alert('Welcome to your original SNKRS');
 }
-welcome();
+saludar();
 
 
 let question = prompt('Deseas seleccionar genero del producto? \n(y-yes / n-no)');
